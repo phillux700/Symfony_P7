@@ -3,6 +3,9 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/12b708ebfa804b878c7b4b427e8f6e60)](https://app.codacy.com/app/sergisergio/Bilemo_Project7?utm_source=github.com&utm_medium=referral&utm_content=sergisergio/Bilemo_Project7&utm_campaign=Badge_Grade_Dashboard)
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sergisergio/Bilemo_Project7/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sergisergio/Bilemo_Project7/?branch=master)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/8f370362c78c588ce085/maintainability)](https://codeclimate.com/github/sergisergio/Bilemo_Project7/maintainability)
+
 ## Setup
 
 **Download Composer dependencies**
