@@ -21,6 +21,12 @@
         <!-- ###- nelmio/cors-bundle ### -->
         <env name="DATABASE_URL" value="mysql://root:root@127.0.0.1/BileMo" />
         <env name="BOOTSTRAP_RESET_DATABASE" value="1" />
+
+        <!-- ###+ lexik/jwt-authentication-bundle ### -->
+        <env name="JWT_SECRET_KEY" value="%kernel.project_dir%/config/jwt/private.pem"/>
+        <env name="JWT_PUBLIC_KEY" value="%kernel.project_dir%/config/jwt/public.pem"/>
+        <env name="JWT_PASSPHRASE" value="a129059b4595dfc25db7d553e40ad912"/>
+        <!-- ###- lexik/jwt-authentication-bundle ### -->
     </php>
 
     <testsuites>
