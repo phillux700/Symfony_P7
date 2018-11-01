@@ -4,9 +4,16 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
- * @ApiResource()
+ * @ApiResource(
+ *     normalizationContext={"groups"={"get","post","delete"}},
+ *     collectionOperations={"get"={
+ *     "normalization_context"={"groups"={"get"}}
+ *     },
+ *     "post"},
+ *     itemOperations={"get","delete"})
  * @ORM\Entity(repositoryClass="App\Repository\UsersRepository")
  */
 class Users
