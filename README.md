@@ -8,6 +8,8 @@
 
 [![Build Status](https://travis-ci.org/sergisergio/Bilemo_Project7.svg?branch=master)](https://travis-ci.org/sergisergio/Bilemo_Project7)
 
+[![CircleCI](https://circleci.com/gh/sergisergio/Bilemo_Project7.svg?style=svg)](https://circleci.com/gh/sergisergio/Bilemo_Project7)
+
 ## Setup
 
 **Download Composer dependencies**
