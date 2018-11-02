@@ -37,6 +37,3 @@ jobs:
       - run: ./bin/console d:s:c --env=test
       - run: ./bin/console d:f:l -n --env=test
       - run: ./bin/phpunit
-
-      # run tests!
-      - run: phpunit
