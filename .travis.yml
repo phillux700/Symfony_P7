@@ -15,10 +15,10 @@ before-install:
 
 install:
   - composer install
-  - cp .env.dist .env
-  - php bin/console doctrine:database:create
-  - php bin/console doctrine:schema:create
-  - php bin/console doctrine:fixtures:load -n
+  - cp .env.travis .env
+  - php bin/console doctrine:database:create --env=test
+  - php bin/console doctrine:schema:create --env=test
+  - php bin/console doctrine:fixtures:load -n --env=test
 
 script:
   - php bin/phpunit
