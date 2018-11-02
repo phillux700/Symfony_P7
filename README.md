@@ -6,13 +6,15 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/8f370362c78c588ce085/maintainability)](https://codeclimate.com/github/sergisergio/Bilemo_Project7/maintainability)
 
+[![Build Status](https://travis-ci.org/sergisergio/Bilemo_Project7.svg?branch=master)](https://travis-ci.org/sergisergio/Bilemo_Project7)
+
 ## Setup
 
 **Download Composer dependencies**
 
 Make sure you have [Composer installed](https://getcomposer.org/download/)
 and then run:
-                   
+
 ```
 composer install
 ```
