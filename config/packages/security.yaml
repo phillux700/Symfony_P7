@@ -1,5 +1,9 @@
 security:
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    encoders:
+        App\Entity\Client:
+            algorithm: bcrypt
+
     providers:
         #in_memory: { memory: ~ }
         api_provider:
@@ -19,6 +23,7 @@ security:
         api:
             pattern:   ^/api
             stateless: true
+            provider: api_provider
             guard:
                 authenticators:
                 - lexik_jwt_authentication.jwt_token_authenticator
