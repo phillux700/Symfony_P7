@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="58cee250-e719-486d-88ed-8731c2bc6f1c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ClientFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ClientFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Client.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +59,7 @@
           <entry key="json" value="1" />
           <entry key="md" value="210" />
           <entry key="php" value="1666" />
-          <entry key="yaml" value="286" />
+          <entry key="yaml" value="287" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -72,7 +69,7 @@
           <entry key="PHP" value="1653" />
           <entry key="PLAIN_TEXT" value="60" />
           <entry key="XML" value="84" />
-          <entry key="YAML" value="286" />
+          <entry key="YAML" value="287" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -99,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+            <state relative-caret-position="457">
+              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -321,10 +318,10 @@
       <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="104" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1224" />
     <option name="y" value="53" />
-    <option name="width" value="2398" />
+    <option name="width" value="1278" />
     <option name="height" value="1215" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -458,18 +455,17 @@
       <workItem from="1540981335830" duration="8992000" />
       <workItem from="1541072874129" duration="2302000" />
       <workItem from="1541277229619" duration="5133000" />
-      <workItem from="1541324596904" duration="5363000" />
+      <workItem from="1541324596904" duration="6299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29995000" />
+    <option name="totallyTimeSpent" value="30931000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="104" y="53" width="2398" height="1215" extended-state="0" />
-    <editor active="true" />
+    <frame x="1224" y="53" width="1278" height="1215" extended-state="1" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12351443" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23543689" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -708,8 +704,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+        <state relative-caret-position="457">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
         </state>
       </provider>
     </entry>
