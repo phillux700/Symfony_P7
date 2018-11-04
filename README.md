@@ -56,7 +56,8 @@ Be careful: you must put the key you chose in the .env file
 **Test Getting a token**
 
 ```bash
-curl -X POST -H "Content-Type: application/json" http://localhost:8000/api/login_check -d '{"username":"johndoe","password":"test"}'
+curl -X POST http://localhost:8000/api/login_check -d _username=johndoe -d _password=test
+
 ```
 
 You should have an answer like this:

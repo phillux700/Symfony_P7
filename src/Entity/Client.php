@@ -50,6 +50,11 @@ class Client implements UserInterface
      */
     private $users;
 
+    /**
+     * @ORM\Column(type="array")
+     */
+    private $roles;
+
     public function __construct()
     {
         $this->users = new ArrayCollection();
@@ -141,7 +146,14 @@ class Client implements UserInterface
 
     public function getRoles()
     {
-        // TODO: Implement getRoles() method.
+        return $this->roles;
+    }
+
+    public function setRoles(array $roles)
+    {
+        $this->roles = $roles;
+
+        return $this;
     }
 
     public function getSalt()
