@@ -11,6 +11,14 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ApiResource(
+ *     itemOperations=
+ *     {
+ *          "detail"={"method"="GET", "path"="products/{id}"}
+ *     },
+ *     collectionOperations=
+ *     {
+ *          "list"={"method"="GET", "path"="products"}
+ *     }
  * )
  * @ORM\Entity(repositoryClass="App\Repository\ProductRepository")
  * @UniqueEntity(fields={"name"}, message="Ce produit existe déjà !")
@@ -27,7 +35,6 @@ class Product
     /**
      * @ORM\Column(type="string", length=100)
      * @Assert\NotBlank(message="Ce champ ne peut être vide !")
-     * @Groups({"get"})
      */
     private $name;
 
