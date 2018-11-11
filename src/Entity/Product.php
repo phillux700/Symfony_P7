@@ -6,16 +6,14 @@ use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+
 
 /**
  * @ApiResource(
- *     normalizationContext={"groups"={"get"}},
- *     collectionOperations={
- *     "get"={"normalization_context"={"groups"={"get"}}}
- *     },
- *     itemOperations={"get"}
  * )
  * @ORM\Entity(repositoryClass="App\Repository\ProductRepository")
+ * @UniqueEntity(fields={"name"}, message="Ce produit existe déjà !")
  */
 class Product
 {
@@ -28,7 +26,7 @@ class Product
 
     /**
      * @ORM\Column(type="string", length=100)
-     * @Assert\NotBlank
+     * @Assert\NotBlank(message="Ce champ ne peut être vide !")
      * @Groups({"get"})
      */
     private $name;
@@ -41,7 +39,7 @@ class Product
 
     /**
      * @ORM\Column(type="float")
-     * @Assert\NotBlank
+     * @Assert\NotNull(message="Vous devez entrer un prix")
      */
     private $price;
 

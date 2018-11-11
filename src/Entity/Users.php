@@ -5,15 +5,12 @@ namespace App\Entity;
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 /**
- * @ApiResource(
- *     normalizationContext={"groups"={"get","post","delete"}},
- *     collectionOperations={"get"={
- *     "normalization_context"={"groups"={"get"}}
- *     },
- *     "post"},
- *     itemOperations={"get","delete"})
+ * @ApiResource()
  * @ORM\Entity(repositoryClass="App\Repository\UsersRepository")
  */
 class Users
@@ -27,21 +24,25 @@ class Users
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Assert\NotBlank(message="Ce champ ne peut être vide")
      */
     private $username;
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Assert\NotBlank(message="Ce champ ne peut être vide")
      */
     private $email;
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Assert\NotBlank(message="Ce champ ne peut être vide")
      */
     private $firstName;
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Assert\NotBlank(message="Ce champ ne peut être vide")
      */
     private $lastName;
 
