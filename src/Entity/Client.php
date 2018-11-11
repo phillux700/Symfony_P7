@@ -12,7 +12,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
- *
+ * @ApiResource()
  * @ORM\Entity(repositoryClass="App\Repository\ClientRepository")
  * @UniqueEntity(fields={"company"}, message="Société déjà existante")
  * @UniqueEntity(fields={"username"}, message="Username déjà pris")

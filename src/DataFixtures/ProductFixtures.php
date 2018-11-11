@@ -17,8 +17,6 @@ class ProductFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
-        $date = new \DateTime();
-
         $product1 = new Product();
         $product1->setName('Samsung Galaxy Note 32');
         $product1->setCreatedAt(new \DateTime('now'));

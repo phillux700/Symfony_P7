@@ -14,19 +14,24 @@ use App\Entity\Users;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
+use Faker\Factory;
 
 class UsersFixtures extends Fixture implements DependentFixtureInterface
 {
     public function load(ObjectManager $manager)
     {
-        $user1 = new Users();
-        $user1->setUsername('Philippe');
-        $user1->setEmail('Adresse de Philippe');
-        $user1->setFirstName('Philippe');
-        $user1->setLastname('Traon');
-        $user1->setCreatedAt(new \DateTime('now'));
-        $user1->setClient($this->getReference('client1'));
-        $manager->persist($user1);
+        $faker = Factory::create('fr_FR');
+        for ($i = 0; $i < 100; $i++) {
+            $user = new Users();
+            $user->setUsername($faker->userName);
+            $user->setEmail($faker->email);
+            $user->setFirstName($faker->firstName);
+            $user->setLastname($faker->lastName);
+            $user->setCreatedAt(new \DateTime('now'));
+            $user->setClient($this->getReference('client'.rand(1, 4)));
+            $manager->persist($user);
+        }
+
 
         $manager->flush();
 

@@ -42,10 +42,37 @@ class ClientFixtures extends Fixture implements UserPasswordEncoderInterface
         $client1->setRoles(["ROLE_ADMIN"]);
         $manager->persist($client1);
 
+        $client2 = new Client();
+        $client2->setCompany('DARTY');
+        $client2->setAddress('Adresse de DARTY');
+        $client2->setUsername('DARTY');
+        $client2->setPassword($this->passwordEncoder->encodePassword($client2, 'DARTY'));
+        $client2->setRoles(["ROLE_ADMIN"]);
+        $manager->persist($client2);
+
+        $client3 = new Client();
+        $client3->setCompany('AMAZON');
+        $client3->setAddress('Adresse d\'AMAZON');
+        $client3->setUsername('AMAZON');
+        $client3->setPassword($this->passwordEncoder->encodePassword($client1, 'AMAZON'));
+        $client3->setRoles(["ROLE_ADMIN"]);
+        $manager->persist($client3);
+
+        $client4 = new Client();
+        $client4->setCompany('Cdiscount');
+        $client4->setAddress('Adresse de Cdiscount');
+        $client4->setUsername('Cdiscount');
+        $client4->setPassword($this->passwordEncoder->encodePassword($client4, 'Cdiscount'));
+        $client4->setRoles(["ROLE_ADMIN"]);
+        $manager->persist($client4);
+
         $manager->flush();
 
         // Chaque client peut avoir des utilisateurs donc je dois ajouter une référence
         $this->addReference('client1', $client1);
+        $this->addReference('client2', $client2);
+        $this->addReference('client3', $client3);
+        $this->addReference('client4', $client4);
     }
 
     public function encodePassword(UserInterface $user, $plainPassword)
