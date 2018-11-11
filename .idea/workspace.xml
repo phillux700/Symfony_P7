@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58cee250-e719-486d-88ed-8731c2bc6f1c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Bilemo_Project7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bilemo_Project7.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ClientFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ClientFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ProductFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ProductFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UsersFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UsersFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test-coverage/Entity/Client.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/test-coverage/Entity/Client.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test-coverage/Entity/Product.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/test-coverage/Entity/Product.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test-coverage/Entity/Users.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/test-coverage/Entity/Users.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test-coverage/Entity/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/test-coverage/Entity/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test-coverage/Entity/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/test-coverage/Entity/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test-coverage/Repository/ClientRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/test-coverage/Repository/ClientRepository.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test-coverage/Repository/ProductRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/test-coverage/Repository/ProductRepository.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test-coverage/Repository/UsersRepository.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/test-coverage/Repository/UsersRepository.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test-coverage/Repository/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/test-coverage/Repository/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test-coverage/Repository/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/test-coverage/Repository/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test-coverage/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/test-coverage/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/test-coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/test-coverage/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +73,7 @@
           <entry key="env" value="46" />
           <entry key="json" value="1" />
           <entry key="md" value="210" />
-          <entry key="php" value="2248" />
+          <entry key="php" value="2275" />
           <entry key="yaml" value="776" />
         </counts>
       </usages-collector>
@@ -78,7 +81,7 @@
         <counts>
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="210" />
-          <entry key="PHP" value="1987" />
+          <entry key="PHP" value="2014" />
           <entry key="PLAIN_TEXT" value="308" />
           <entry key="XML" value="84" />
           <entry key="YAML" value="776" />
@@ -120,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Entity/Client.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="336">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding>
                 <element signature="e#30#74#0#PHP" expanded="true" />
               </folding>
@@ -141,11 +144,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataFixtures/ClientFixtures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="61" column="30" lean-forward="true" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="36" />
+            <state relative-caret-position="589">
+              <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -174,8 +177,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataFixtures/UsersFixtures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="502">
+              <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
               <folding>
                 <element signature="e#127#149#0#PHP" expanded="true" />
               </folding>
@@ -218,10 +221,10 @@
         <option value="$PROJECT_DIR$/src/Entity/Users.php" />
         <option value="$PROJECT_DIR$/src/Entity/Product.php" />
         <option value="$PROJECT_DIR$/config/packages/api_platform.yaml" />
-        <option value="$PROJECT_DIR$/src/DataFixtures/UsersFixtures.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Client.php" />
         <option value="$PROJECT_DIR$/src/DataFixtures/ProductFixtures.php" />
         <option value="$PROJECT_DIR$/src/DataFixtures/ClientFixtures.php" />
+        <option value="$PROJECT_DIR$/src/DataFixtures/UsersFixtures.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Client.php" />
       </list>
     </option>
   </component>
@@ -347,8 +350,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="496" />
-    <option name="y" value="100" />
+    <option name="x" value="245" />
+    <option name="y" value="88" />
     <option name="width" value="1766" />
     <option name="height" value="1215" />
   </component>
@@ -384,36 +387,7 @@
             <path>
               <item name="Bilemo_Project7" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bilemo_Project7" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bilemo_Project7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bilemo_Project7" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="jwt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bilemo_Project7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bilemo_Project7" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bilemo_Project7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bilemo_Project7" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bilemo_Project7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bilemo_Project7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bilemo_Project7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bilemo_Project7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bilemo_Project7" type="b2602c69:ProjectViewProjectNode" />
@@ -468,15 +442,15 @@
       <workItem from="1541512626278" duration="2269000" />
       <workItem from="1541541792685" duration="1167000" />
       <workItem from="1541582799282" duration="38000" />
-      <workItem from="1541946898050" duration="4115000" />
+      <workItem from="1541946898050" duration="4753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43113000" />
+    <option name="totallyTimeSpent" value="43751000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="446" y="237" width="1766" height="1215" extended-state="0" />
+    <frame x="245" y="88" width="1766" height="1215" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12645012" />
@@ -705,16 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="e#30#74#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataFixtures/ProductFixtures.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -722,20 +686,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/ClientFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataFixtures/UsersFixtures.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        <state relative-caret-position="502">
+          <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
           <folding>
             <element signature="e#127#149#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/ClientFixtures.php">
+    <entry file="file://$PROJECT_DIR$/src/Entity/Client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="61" column="30" lean-forward="true" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="36" />
+        <state relative-caret-position="336">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="e#30#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
