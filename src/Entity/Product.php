@@ -11,14 +11,16 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ApiResource(
- *     itemOperations=
- *     {
- *          "detail"={"method"="GET", "path"="products/{id}"}
- *     },
+ *     attributes={"access_control"="is_granted('ROLE_ADMIN')"},
  *     collectionOperations=
  *     {
- *          "list"={"method"="GET", "path"="products"}
- *     }
+ *          "get"={},
+ *     },
+ *     itemOperations=
+ *     {
+ *          "get"={"method"="GET"}
+ *     },
+
  * )
  * @ORM\Entity(repositoryClass="App\Repository\ProductRepository")
  * @UniqueEntity(fields={"name"}, message="Ce produit existe déjà !")

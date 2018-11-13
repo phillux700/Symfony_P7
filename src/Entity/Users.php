@@ -11,16 +11,18 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ApiResource(
- *      itemOperations=
- *     {
- *          "detail"={"method"="GET", "path"="users/{id}"},
- *          "delete"={"method"="DELETE", "path"="users/{id}"},
- *     },
+ *     attributes={"access_control"="is_granted('ROLE_ADMIN')"},
  *     collectionOperations=
  *     {
- *         "list"={"method"="GET", "path"="users"},
- *         "create"={"method"="POST", "path"="users"},
- *     }
+ *         "get"={"method"="GET", "access_control"="is_granted('ROLE_ADMIN')", "access_control_message"="Only admins can see all users"},
+ *         "post"={"method"="POST", "access_control"="is_granted('ROLE_ADMIN')", "access_control_message"="Only admins can create users"}
+ *     },
+ *
+ *      itemOperations=
+ *     {
+ *          "get"={"method"="GET", "access_control"="is_granted('ROLE_ADMIN') or object == user", "access_control_message"="You can only see your own user"},
+ *          "delete"={"method"="DELETE", "access_control"="is_granted('ROLE_ADMIN') and object != user", "access_control_message"="Only admins can delete users"}
+ *     },
  * )
  * @ORM\Entity(repositoryClass="App\Repository\UsersRepository")
  */
