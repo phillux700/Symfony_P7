@@ -14,11 +14,11 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *     attributes={"access_control"="is_granted('ROLE_ADMIN')"},
  *     collectionOperations=
  *     {
- *          "get"={},
+ *          "get"={"method"="GET", "swagger_context"={"summary"="Permet de récupérer l'ensemble des ressources Product."}},
  *     },
  *     itemOperations=
  *     {
- *          "get"={"method"="GET"}
+ *          "get"={"method"="GET", "swagger_context"={"summary"="Permet de récupérer une ressource Product grâce à son id."}}
  *     },
 
  * )
@@ -36,7 +36,6 @@ class Product
 
     /**
      * @ORM\Column(type="string", length=100)
-     * @Assert\NotBlank(message="Ce champ ne peut être vide !")
      */
     private $name;
 
@@ -48,7 +47,6 @@ class Product
 
     /**
      * @ORM\Column(type="float")
-     * @Assert\NotNull(message="Vous devez entrer un prix")
      */
     private $price;
 

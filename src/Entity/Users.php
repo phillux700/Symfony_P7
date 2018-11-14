@@ -14,14 +14,14 @@ use Symfony\Component\Validator\Constraints as Assert;
  *     attributes={"access_control"="is_granted('ROLE_ADMIN')"},
  *     collectionOperations=
  *     {
- *         "get"={"method"="GET", "access_control"="is_granted('ROLE_ADMIN')", "access_control_message"="Only admins can see all users"},
- *         "post"={"method"="POST", "access_control"="is_granted('ROLE_ADMIN')", "access_control_message"="Only admins can create users"}
+ *         "get"={"method"="GET", "access_control"="is_granted('ROLE_ADMIN')", "access_control_message"="Only admins can see all users", "swagger_context"={"summary"="Permet de récupérer l'ensemble des ressources Users"}, "groups"={"list"}, "normalization_context"={"groups"={"list"}}},
+ *         "post"={"method"="POST", "access_control"="is_granted('ROLE_ADMIN')", "access_control_message"="Only admins can create users", "swagger_context"={"summary"="Permet d'ajouter une ressource Users"}}
  *     },
  *
  *      itemOperations=
  *     {
- *          "get"={"method"="GET", "access_control"="is_granted('ROLE_ADMIN') or object == user", "access_control_message"="You can only see your own user"},
- *          "delete"={"method"="DELETE", "access_control"="is_granted('ROLE_ADMIN') and object != user", "access_control_message"="Only admins can delete users"}
+ *          "get"={"method"="GET", "access_control"="is_granted('ROLE_ADMIN') or object == user", "access_control_message"="You can only see your own user", "swagger_context"={"summary"="Permet de récupérer une ressources Users grâce à son id"}},
+ *          "delete"={"method"="DELETE", "access_control"="is_granted('ROLE_ADMIN') and object != user", "access_control_message"="Only admins can delete users", "swagger_context"={"summary"="Permet de supprimer une ressource Users grâce à son id"}}
  *     },
  * )
  * @ORM\Entity(repositoryClass="App\Repository\UsersRepository")
@@ -31,30 +31,35 @@ class Users
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
+     * @Groups({"list"})
      * @ORM\Column(type="integer")
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Groups({"list"})
      * @Assert\NotBlank(message="Ce champ ne peut être vide")
      */
     private $username;
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Groups({"list"})
      * @Assert\NotBlank(message="Ce champ ne peut être vide")
      */
     private $email;
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Groups({"list"})
      * @Assert\NotBlank(message="Ce champ ne peut être vide")
      */
     private $firstName;
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Groups({"list"})
      * @Assert\NotBlank(message="Ce champ ne peut être vide")
      */
     private $lastName;
