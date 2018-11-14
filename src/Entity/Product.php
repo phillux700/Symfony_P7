@@ -11,16 +11,22 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ApiResource(
- *     attributes={"access_control"="is_granted('ROLE_CLIENT')"},
+ *     attributes={
+ *          "normalization_context"={"groups"={"read"}}
+ *     },
  *     collectionOperations=
  *     {
- *          "get"={"method"="GET", "swagger_context"={"summary"="Permet de récupérer l'ensemble des ressources Product."}},
+ *          "get"={
+ *              "method"="GET",
+ *              "swagger_context"={"summary"="Permet de récupérer l'ensemble des ressources Product."}},
  *     },
  *     itemOperations=
  *     {
- *          "get"={"method"="GET", "swagger_context"={"summary"="Permet de récupérer une ressource Product grâce à son id."}}
+ *          "get"={
+ *              "method"="GET",
+ *              "swagger_context"={"summary"="Permet de récupérer une ressource Product grâce à son id."}}
  *     },
-
+ *
  * )
  * @ORM\Entity(repositoryClass="App\Repository\ProductRepository")
  * @UniqueEntity(fields={"name"}, message="Ce produit existe déjà !")
@@ -31,27 +37,32 @@ class Product
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Groups({"read"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Groups({"read"})
      */
     private $name;
 
     /**
      * @ORM\Column(type="text")
      * @Assert\NotBlank
+     * @Groups({"read"})
      */
     private $description;
 
     /**
      * @ORM\Column(type="float")
+     * @Groups({"read"})
      */
     private $price;
 
     /**
      * @ORM\Column(type="datetime")
+     * @Groups({"read"})
      */
     private $createdAt;
 
