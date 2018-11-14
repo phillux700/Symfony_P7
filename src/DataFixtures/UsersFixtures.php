@@ -28,7 +28,7 @@ class UsersFixtures extends Fixture implements DependentFixtureInterface
             $user->setFirstName($faker->firstName);
             $user->setLastname($faker->lastName);
             $user->setCreatedAt(new \DateTime('now'));
-            $user->setClient($this->getReference('client'.rand(1, 4)));
+            $user->setClient($this->getReference('client'.rand(2, 5)));
             $manager->persist($user);
         }
 

@@ -11,7 +11,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ApiResource(
- *     attributes={"access_control"="is_granted('ROLE_ADMIN')"},
+ *     attributes={"access_control"="is_granted('ROLE_CLIENT')"},
  *     collectionOperations=
  *     {
  *          "get"={"method"="GET", "swagger_context"={"summary"="Permet de récupérer l'ensemble des ressources Product."}},

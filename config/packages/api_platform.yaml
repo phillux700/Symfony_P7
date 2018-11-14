@@ -2,6 +2,7 @@ api_platform:
     title: 'BileMo API'
     description: "Cette API permet de récupérer une liste de téléphones mobiles ainsi que le détail d'un téléphone mobile.
       Elle permet également de récupérer les utilisateurs, le détail d un utilisateur, mais aussi ajouter ou supprimer un utilisateur."
+    version: '1.0.0'
     # Enable the FOSUserBundle integration.
     enable_fos_user: false
     # Enable the Nelmio Api doc integration.

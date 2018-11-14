@@ -35,44 +35,53 @@ class ClientFixtures extends Fixture implements UserPasswordEncoderInterface
     public function load(ObjectManager $manager)
     {
         $client1 = new Client();
-        $client1->setCompany('FNAC');
-        $client1->setAddress('Adresse de la FNAC');
-        $client1->setUsername('FNAC');
-        $client1->setPassword($this->passwordEncoder->encodePassword($client1, 'FNAC'));
+        $client1->setCompany('BileMo');
+        $client1->setAddress('Adresse de BileMo');
+        $client1->setUsername('BileMo');
+        $client1->setPassword($this->passwordEncoder->encodePassword($client1, 'BileMo'));
         $client1->setRoles(["ROLE_ADMIN"]);
         $manager->persist($client1);
 
         $client2 = new Client();
-        $client2->setCompany('DARTY');
-        $client2->setAddress('Adresse de DARTY');
-        $client2->setUsername('DARTY');
-        $client2->setPassword($this->passwordEncoder->encodePassword($client2, 'DARTY'));
-        $client2->setRoles(["ROLE_ADMIN"]);
+        $client2->setCompany('FNAC');
+        $client2->setAddress('Adresse de la FNAC');
+        $client2->setUsername('FNAC');
+        $client2->setPassword($this->passwordEncoder->encodePassword($client2, 'FNAC'));
+        $client2->setRoles(["ROLE_CLIENT"]);
         $manager->persist($client2);
 
         $client3 = new Client();
-        $client3->setCompany('AMAZON');
-        $client3->setAddress('Adresse d\'AMAZON');
-        $client3->setUsername('AMAZON');
-        $client3->setPassword($this->passwordEncoder->encodePassword($client1, 'AMAZON'));
-        $client3->setRoles(["ROLE_ADMIN"]);
+        $client3->setCompany('DARTY');
+        $client3->setAddress('Adresse de DARTY');
+        $client3->setUsername('DARTY');
+        $client3->setPassword($this->passwordEncoder->encodePassword($client3, 'DARTY'));
+        $client3->setRoles(["ROLE_CLIENT"]);
         $manager->persist($client3);
 
         $client4 = new Client();
-        $client4->setCompany('Cdiscount');
-        $client4->setAddress('Adresse de Cdiscount');
-        $client4->setUsername('Cdiscount');
-        $client4->setPassword($this->passwordEncoder->encodePassword($client4, 'Cdiscount'));
-        $client4->setRoles(["ROLE_ADMIN"]);
+        $client4->setCompany('AMAZON');
+        $client4->setAddress('Adresse d\'AMAZON');
+        $client4->setUsername('AMAZON');
+        $client4->setPassword($this->passwordEncoder->encodePassword($client4, 'AMAZON'));
+        $client4->setRoles(["ROLE_CLIENT"]);
         $manager->persist($client4);
+
+        $client5 = new Client();
+        $client5->setCompany('Cdiscount');
+        $client5->setAddress('Adresse de Cdiscount');
+        $client5->setUsername('Cdiscount');
+        $client5->setPassword($this->passwordEncoder->encodePassword($client5, 'Cdiscount'));
+        $client5->setRoles(["ROLE_CLIENT"]);
+        $manager->persist($client5);
 
         $manager->flush();
 
         // Chaque client peut avoir des utilisateurs donc je dois ajouter une référence
-        $this->addReference('client1', $client1);
+        //$this->addReference('client1', $client1);
         $this->addReference('client2', $client2);
         $this->addReference('client3', $client3);
         $this->addReference('client4', $client4);
+        $this->addReference('client5', $client5);
     }
 
     public function encodePassword(UserInterface $user, $plainPassword)
