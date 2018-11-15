@@ -129,6 +129,25 @@ In the body, select "raw" and JSON(application/json) and write your credentials.
 
 Then, Do your requests using the Bearer Authorization and paste your token.
 
+**Richardson Maturity Model**
+
+***Level1: Resources***
+
+example: /users or /users/{id}
+
+***Level2: Verbs***
+
+example: GET /users/{id}
+
+***Level3: Hypermedia controls***
+
+The point of hypermedia controls is that they tell us what we can do next.
+
+
+
+
+
+
 
 **Any Questions ?**
 

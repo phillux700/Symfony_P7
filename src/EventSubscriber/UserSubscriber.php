@@ -12,6 +12,7 @@ use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInt
  * Class UserSubscriber
  * @package App\EventSubscriber
  * See https://api-platform.com/docs/core/events/
+ * Here, we'll add the current client when we add a user
  */
 final class UserSubscriber implements EventSubscriberInterface
 {

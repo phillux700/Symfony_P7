@@ -1,22 +1,33 @@
 api_platform:
+
     title: 'BileMo API'
+
     description: "Cette API permet de récupérer une liste de téléphones mobiles ainsi que le détail d'un téléphone mobile.
       Elle permet également de récupérer les utilisateurs, le détail d un utilisateur, mais aussi ajouter ou supprimer un utilisateur."
+
     version: '1.0.0'
+
     # Enable the FOSUserBundle integration.
     enable_fos_user: false
+
     # Enable the Nelmio Api doc integration.
     enable_nelmio_api_doc: false
+
     # Enable the Swagger documentation and export.
     enable_swagger: true
+
     # Enable Swagger ui.
     enable_swagger_ui: true
+
     # Enable the entrypoint.
     enable_entrypoint: true
+
     # Enable the docs.
     enable_docs: true
+
     mapping:
         paths: ['%kernel.project_dir%/src/Entity']
+
     swagger:
         api_keys:
             apiKey:
@@ -24,11 +35,11 @@ api_platform:
                 type: header
     # The list of enabled formats. The first one will be the default.
     formats:
-        jsonld:
-            mime_types: ['application/ld+json']
-
         json:
             mime_types: ['application/json']
+
+        jsonld:
+            mime_types: ['application/ld+json']
 
         html:
             mime_types: ['text/html']
@@ -56,22 +67,6 @@ api_platform:
 
         # Default value for the response shared (proxy) max age.
         shared_max_age: 3600
-
-        # Default values of the "Vary" HTTP header.
-        vary: ['Accept']
-
-        # To make all responses public by default.
-        public: ~
-
-        invalidation:
-            # To enable the tags-based cache invalidation system.
-            enabled: false
-
-            # URLs of the Varnish servers to purge using cache tags when a resource is updated.
-            varnish_urls: []
-
-            # To pass options to the client charged with the request.
-            request_options: []
 
 framework:
     serializer: { enable_annotations: true }
