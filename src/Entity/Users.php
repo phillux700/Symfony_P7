@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
+use App\Entity\Client;
 
 
 /**
@@ -19,33 +20,24 @@ use Symfony\Component\Validator\Constraints as Assert;
  *     },
  *     collectionOperations=
  *     {
- *         "get"={
+ *         "getAll"={
  *              "method"="GET",
- *              "path"="users",
- *              "access_control"="is_granted('ROLE_CLIENT')",
- *              "access_control_message"="Only admins can see all users",
  *              "groups"={"read"},
  *              "swagger_context"={"summary"="Permet de récupérer l'ensemble des ressources Users"}},
  *         "post"={
  *              "method"="POST",
- *              "access_control"="is_granted('ROLE_CLIENT')",
- *              "access_control_message"="Only admins can create users",
  *              "swagger_context"={"summary"="Permet d'ajouter une ressource Users"}}
  *     },
  *
  *      itemOperations=
  *     {
- *          "get"={
+ *          "getOne"={
  *              "method"="GET",
  *              "path"="users/{id}",
- *              "access_control"="is_granted('ROLE_CLIENT') or object == user",
- *              "access_control_message"="You can only see your own user",
  *              "groups"={"read"},
  *              "swagger_context"={"summary"="Permet de récupérer une ressources Users grâce à son id"}},
  *          "delete"={
  *              "method"="DELETE",
- *              "access_control"="is_granted('ROLE_CLIENT') and object != user",
- *              "access_control_message"="Only admins can delete users",
  *              "swagger_context"={"summary"="Permet de supprimer une ressource Users grâce à son id"}}
  *     },
  * )
@@ -96,8 +88,7 @@ class Users
     private $createdAt;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Client", inversedBy="users")
-     * @ORM\JoinColumn(name="client_id", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Client", cascade={"persist"}, inversedBy="users")
      */
     private $client;
 

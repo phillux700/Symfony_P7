@@ -19,7 +19,6 @@ use Symfony\Component\Serializer\Annotation\Groups;
  * @ORM\Entity(repositoryClass="App\Repository\ClientRepository")
  * @UniqueEntity(fields={"company"}, message="Société déjà existante")
  * @UniqueEntity(fields={"username"}, message="Username déjà pris")
- * @UniqueEntity(fields={"email"}, message="Email déjà pris")
  */
 class Client implements UserInterface
 {
@@ -27,7 +26,6 @@ class Client implements UserInterface
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
-     * @Groups({"list"})
      */
     private $id;
 
@@ -153,7 +151,7 @@ class Client implements UserInterface
 
     public function getRoles()
     {
-        return $this->roles;
+        return array('ROLE_USER');
     }
 
     public function setRoles(array $roles)
@@ -172,6 +170,5 @@ class Client implements UserInterface
     {
         // TODO: Implement eraseCredentials() method.
     }
-
 
 }

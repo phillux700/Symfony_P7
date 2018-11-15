@@ -53,7 +53,7 @@ Be careful: you must put the key you chose in the .env file
 **Test Getting a token**
 
 ```bash
-curl -X POST http://localhost:8000/api/login_check -d _username=johndoe -d _password=test
+curl -X POST -H "Content-Type: application/json" {yourdomain}/api/login_check -d '{"username":"{yourusername}", "password":"{yourpassword}"}'
 
 ```
 
@@ -63,6 +63,13 @@ You should have an answer like this:
 {
    "token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9.eyJleHAiOjE0MzQ3Mjc1MzYsInVzZXJuYW1lIjoia29ybGVvbiIsImlhdCI6IjE0MzQ2NDExMzYifQ.nh0L_wuJy6ZKIQWh6OrW5hdLkviTs1_bau2GqYdDCB0Yqy_RplkFghsuqMpsFls8zKEErdX5TYCOR7muX0aQvQxGQ4mpBkvMDhJ4-pE4ct2obeMTr_s4X8nC00rBYPofrOONUOR4utbzvbd4d2xT_tj4TdR_0tsr91Y7VskCRFnoXAnNT-qQb7ci7HIBTbutb9zVStOFejrb4aLbr7Fl4byeIEYgp2Gd7gY"
 }
+```
+
+Authentification
+
+```bash
+curl -H "Authorization: Bearer {yourtoken}" {yourdomain}/api
+
 ```
 
 For more informations, see [JWT](https://github.com/lexik/LexikJWTAuthenticationBundle)
@@ -81,16 +88,44 @@ php bin/console doctrine:fixtures:load
 
 Now check out the api at `http://localhost:8000/api`
 
-click on the green button "Authorize" and enter :
+**DOC**
 
+click on the green button "Authorize" :
+
+![api1](https://api-platform.com/static/JWTAuthorizeButton-702943047407dc8abd80a3e6c301d4f0-a72cf.png)
+
+
+Enter:
 ```
 Bearer %yourtoken%
 ```
 
+![api2](https://api-platform.com/static/JWTConfigureApiKey-2b1888051ed1e63d8d3520f369c15e95-a72cf.png)
+
+Now, you can see 6 operations:
+
+GET /api/products
+
+GET /api/products/{id}
+
+GET /api/users
+
+GET /api/users/{id}
+
+POST /api/users
+
+DELETE /api/users/{id}
 
 You can also use [Postman](https://www.getpostman.com/) or [Insomnia](https://insomnia.rest/) !
 
+**Postman/Insomnia**
+
+
 In both cases, start with a POST {yourdomain}/api/login_check with your credentials to get your token.
+
+Don't forget in the header : (KEY) Content-Type, (VALUE) application/json.
+
+In the body, select "raw" and JSON(application/json) and write your credentials.
 
 Then, Do your requests using the Bearer Authorization and paste your token.
 
