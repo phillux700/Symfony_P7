@@ -17,7 +17,7 @@ and then run:
 ```
 composer install
 ```
-
+##
 **Configure the the .env File**
 
 First, you should have an `.env` file.
@@ -25,7 +25,7 @@ If you don't, copy `.env.dist` to create it.
 
 Next, look at the configuration and make any adjustments you
 need - specifically `DATABASE_URL`.
-
+##
 **Setup the Database**
 
 Again, make sure `.env` is setup for your computer. Then, create
@@ -41,6 +41,14 @@ If you get an error that the database exists, that should
 be ok. But if you have problems, completely drop the
 database (`doctrine:database:drop --force`) and try again.
 
+##
+**Start server**
+
+```
+php bin/console server:run
+```
+
+##
 **Generate the SSH keys with JWT**
 
 ``` bash
@@ -49,7 +57,7 @@ $ openssl genrsa -out config/jwt/private.pem -aes256 4096
 $ openssl rsa -pubout -in config/jwt/private.pem -out config/jwt/public.pem
 ```
 Be careful: you must put the key you chose in the .env file
-
+##
 **Test Getting a token**
 
 ```bash
@@ -65,7 +73,7 @@ You should have an answer like this:
 }
 ```
 
-Authentification
+**Authentification**
 
 ```bash
 curl -H "Authorization: Bearer {yourtoken}" {yourdomain}/api
@@ -74,20 +82,9 @@ curl -H "Authorization: Bearer {yourtoken}" {yourdomain}/api
 
 For more informations, see [JWT](https://github.com/lexik/LexikJWTAuthenticationBundle)
 
-**Start server**
-
-```
-php bin/console server:run
-```
-
-**Add fixtures**
-
-```
-php bin/console doctrine:fixtures:load
-```
 
 Now check out the api at `http://localhost:8000/api`
-
+##
 **DOC**
 
 click on the green button "Authorize" :
@@ -117,7 +114,7 @@ POST /api/users
 DELETE /api/users/{id}
 
 You can also use [Postman](https://www.getpostman.com/) or [Insomnia](https://insomnia.rest/) !
-
+##
 **Postman/Insomnia**
 
 
@@ -129,7 +126,21 @@ In the body, select "raw" and JSON(application/json) and write your credentials.
 
 Then, Do your requests using the Bearer Authorization and paste your token.
 
-**Richardson Maturity Model**
+##HTTP
+
+***Request***
+
+1) Request Line (HTTP Method, URI, protocol version).
+2) Headers.
+3) Body.
+
+***Response***
+
+1) Status Line (protocol version, code status, code status text).
+2) Headers.
+3) Body.
+
+##Richardson Maturity Model
 
 ***Level1: Resources***
 
@@ -143,7 +154,7 @@ example: GET /users/{id}
 
 The point of hypermedia controls is that they tell us what we can do next.
 
-
+##
 
 
 
