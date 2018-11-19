@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="58cee250-e719-486d-88ed-8731c2bc6f1c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ClientFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ClientFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UsersFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UsersFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Technique/DOC.md" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Technique/DOC.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +29,9 @@
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.76" value="1" />
           <entry key="project.open.time.77" value="1" />
+          <entry key="project.open.time.79" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -66,7 +65,7 @@
           <entry key="dummy" value="16" />
           <entry key="env" value="46" />
           <entry key="json" value="1" />
-          <entry key="md" value="1692" />
+          <entry key="md" value="2054" />
           <entry key="php" value="3844" />
           <entry key="yaml" value="977" />
         </counts>
@@ -74,7 +73,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="1692" />
+          <entry key="Markdown" value="2054" />
           <entry key="PHP" value="3214" />
           <entry key="PLAIN_TEXT" value="693" />
           <entry key="XML" value="84" />
@@ -132,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
+            <state relative-caret-position="651">
               <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
             </state>
           </provider>
@@ -150,7 +149,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataFixtures/UsersFixtures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
+            <state relative-caret-position="420">
               <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
               <folding>
                 <element signature="e#127#149#0#PHP" expanded="true" />
@@ -163,8 +162,8 @@
         <entry file="file://$PROJECT_DIR$/Documentation/Technique/DOC.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="336">
-                <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+              <first_editor relative-caret-position="502">
+                <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -180,8 +179,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="341">
-                <caret line="91" selection-start-line="91" selection-end-line="91" selection-end-column="102" />
+              <first_editor relative-caret-position="1869">
+                <caret line="89" selection-start-line="89" selection-end-line="99" selection-end-column="102" />
               </first_editor>
               <second_editor />
             </state>
@@ -388,18 +387,20 @@
             <path>
               <item name="Bilemo_Project7" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bilemo_Project7" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="Documentation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bilemo_Project7" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bilemo_Project7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Documentation" type="462c0819:PsiDirectoryNode" />
+              <item name="UML" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bilemo_Project7" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bilemo_Project7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
+              <item name="Documentation" type="462c0819:PsiDirectoryNode" />
+              <item name="UML" type="462c0819:PsiDirectoryNode" />
+              <item name="2.Sequence" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -417,6 +418,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Documentation/UML/3.Class" />
+      <recent name="$PROJECT_DIR$/Documentation/UML/2.Sequence" />
+      <recent name="$PROJECT_DIR$/Documentation/UML/1.UseCase" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -456,17 +460,19 @@
       <workItem from="1541582799282" duration="38000" />
       <workItem from="1541946898050" duration="7421000" />
       <workItem from="1542117515276" duration="34877000" />
-      <workItem from="1542624578652" duration="1733000" />
+      <workItem from="1542624578652" duration="3284000" />
+      <workItem from="1542657272959" duration="1212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83029000" />
+    <option name="totallyTimeSpent" value="85792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="403" y="23" width="1996" height="1215" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1136131" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.114636645" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -479,7 +485,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30727273" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30727273" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -685,9 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="794">
           <caret line="153" column="34" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
-          <folding>
-            <element signature="e#30#74#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -702,9 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-          <folding>
-            <element signature="e#39#90#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -719,9 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="e#30#74#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,7 +762,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
+        <state relative-caret-position="651">
           <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
         </state>
       </provider>
@@ -779,7 +776,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataFixtures/UsersFixtures.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
+        <state relative-caret-position="420">
           <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
           <folding>
             <element signature="e#127#149#0#PHP" expanded="true" />
@@ -793,8 +790,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="341">
-            <caret line="91" selection-start-line="91" selection-end-line="91" selection-end-column="102" />
+          <first_editor relative-caret-position="1869">
+            <caret line="89" selection-start-line="89" selection-end-line="99" selection-end-column="102" />
           </first_editor>
           <second_editor />
         </state>
@@ -803,8 +800,8 @@
     <entry file="file://$PROJECT_DIR$/Documentation/Technique/DOC.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="336">
-            <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <first_editor relative-caret-position="502">
+            <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
