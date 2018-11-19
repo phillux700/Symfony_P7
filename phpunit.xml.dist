@@ -42,6 +42,7 @@
                 <directory>src/DataFixtures</directory>
                 <directory>src/Migrations</directory>
                 <directory>src/Kernel.php</directory>
+                <directory>src/CacheKernel.php</directory>
             </exclude>
         </whitelist>
     </filter>

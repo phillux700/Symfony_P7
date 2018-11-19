@@ -75,4 +75,20 @@ class ClientTest extends TestCase
         $this->client->removeUser($this->users);
         $this->assertNull($this->users->getId());
     }
+
+    public function testEraseCredentials()
+    {
+        $this->assertNull($this->client->eraseCredentials());
+    }
+    public function testGetRoles()
+    {
+        $roles = ['ROLE_USER'];
+        $this->client->setRoles($roles);
+        $this->assertSame($roles, $this->client->getRoles());
+    }
+
+    public function testGetSalt()
+    {
+        $this->assertSame(null, $this->client->getSalt());
+    }
 }

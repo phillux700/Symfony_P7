@@ -1,13 +1,12 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: leazygomalas
+ * User: philippetraon
  * Date: 31/10/2018
  * Time: 11:35
  */
 
 namespace App\Tests\Entity;
-
 
 use App\Entity\Client;
 use App\Entity\Users;
