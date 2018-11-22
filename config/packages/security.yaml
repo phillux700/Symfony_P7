@@ -60,8 +60,14 @@ security:
             #check_path: /login_check
           #provider: api_provider
 
+    #role_hierarchy:
+        #ROLE_ADMIN: ROLE_CLIENT
+        #ROLE_CLIENT: ROLE_USER
 
     access_control:
         - { path: ^/api/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         #- { path: ^/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/api/, roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/, roles:  IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/products, roles: ROLE_ADMIN }
+        - { path: ^/api/users, roles: ROLE_ADMIN }
+        - { path: ^/api/clients, roles: ROLE_ADMIN }

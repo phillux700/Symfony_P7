@@ -13,8 +13,26 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ApiResource(
- *     collectionOperations={},
- *     itemOperations={}
+ *     attributes={
+ *         "normalization_context"={"groups"={"read"}}
+ *     },
+ *     collectionOperations={
+ *          "get"={
+ *              "method"="GET",
+ *              "swagger_context"={"summary"="Permet de récupérer l'ensemble des sociétés."},
+ *              "access_control"="is_granted('ROLE_ADMIN')",
+ *              "access_control_message"="Seul un administrateur peut accéder à ces ressources."
+ *          },
+ *     },
+ *     itemOperations={
+ *          "get"={
+ *              "method"="GET",
+ *              "swagger_context"={"summary"="Permet de récupérer le détail d'une société."},
+ *              "access_control_message"="Seul un administrateur peut accéder à cette ressource.",
+ *              "access_control"="is_granted('ROLE_ADMIN')",
+ *              "access_control_message"="Seul un administrateur peut accéder à cette ressource."
+ *          },
+ *     }
  * )
  * @ORM\Entity(repositoryClass="App\Repository\ClientRepository")
  * @UniqueEntity(fields={"company"}, message="Société déjà existante")
@@ -26,22 +44,26 @@ class Client implements UserInterface
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @Groups({"read"})
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=100, unique=true)
      * @Assert\NotBlank
+     * @Groups({"read"})
      */
     private $company;
 
     /**
      * @ORM\Column(type="string", length=150)
+     * @Groups({"read"})
      */
     private $address;
 
     /**
      * @ORM\Column(type="string", length=100, unique=true)
+     * @Groups({"read"})
      */
     private $username;
 
@@ -57,6 +79,7 @@ class Client implements UserInterface
 
     /**
      * @ORM\Column(type="array")
+     * @Groups({"read"})
      */
     private $roles;
 
@@ -151,7 +174,7 @@ class Client implements UserInterface
 
     public function getRoles()
     {
-        return array('ROLE_USER');
+        return $this->roles;
     }
 
     public function setRoles(array $roles)

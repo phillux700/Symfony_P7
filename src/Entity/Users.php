@@ -23,10 +23,12 @@ use App\Entity\Client;
  *         "getAll"={
  *              "method"="GET",
  *              "groups"={"read"},
- *              "swagger_context"={"summary"="Permet de récupérer l'ensemble des ressources Users"}},
+ *              "swagger_context"={"summary"="Permet de récupérer l'ensemble des ressources Users"}
+ *         },
  *         "post"={
  *              "method"="POST",
- *              "swagger_context"={"summary"="Permet d'ajouter une ressource Users"}}
+ *              "swagger_context"={"summary"="Permet d'ajouter une ressource Users"}
+ *         }
  *     },
  *
  *      itemOperations=
@@ -62,7 +64,9 @@ class Users
 
     /**
      * @ORM\Column(type="string", length=100)
-     * @Assert\NotBlank(message="Ce champ ne peut être vide")
+     * @Assert\Email(
+     *     message = "The email '{{ value }}' is not a valid email."
+     * )
      * @Groups({"read", "write"})
      */
     private $email;
@@ -83,7 +87,7 @@ class Users
 
     /**
      * @ORM\Column(type="datetime")
-     * @Groups({"read", "write"})
+     * @Groups({"read"})
      */
     private $createdAt;
 
@@ -94,7 +98,8 @@ class Users
 
     public function __construct()
     {
-        $this->clients = new ArrayCollection();
+        $this->client = new ArrayCollection();
+        $this->createdAt = new \DateTime();
     }
 
     public function getId(): ?int

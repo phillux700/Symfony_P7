@@ -12,19 +12,22 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 /**
  * @ApiResource(
  *     attributes={
- *          "normalization_context"={"groups"={"read"}}
+ *          "normalization_context"={"groups"={"read"}},
  *     },
  *     collectionOperations=
  *     {
  *          "get"={
  *              "method"="GET",
- *              "swagger_context"={"summary"="Permet de récupérer l'ensemble des ressources Product."}},
+ *              "swagger_context"={"summary"="Permet de récupérer l'ensemble des ressources Product."}
+ *              },
+ *
  *     },
  *     itemOperations=
  *     {
  *          "get"={
  *              "method"="GET",
- *              "swagger_context"={"summary"="Permet de récupérer une ressource Product grâce à son id."}}
+ *              "swagger_context"={"summary"="Permet de récupérer une ressource Product grâce à son id."}
+ *          }
  *     },
  *
  * )
