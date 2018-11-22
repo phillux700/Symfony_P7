@@ -68,6 +68,13 @@ api_platform:
         # Default value for the response shared (proxy) max age.
         shared_max_age: 3600
 
+    exception_to_status:
+        # The 2 following handlers are registered by default, keep those lines to prevent unexpected side effects
+        Symfony\Component\Serializer\Exception\ExceptionInterface: 400 # Use a raw status code (recommended)
+        ApiPlatform\Core\Exception\InvalidArgumentException: 'HTTP_BAD_REQUEST' # Or a `Symfony\Component\HttpFoundation\Response`'s constant
+
+        App\Exception\ProductNotFoundException: 404 # Here is the handler for our custom exception
+
 framework:
     serializer: { enable_annotations: true }
 

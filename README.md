@@ -126,7 +126,8 @@ In the body, select "raw" and JSON(application/json) and write your credentials.
 
 Then, Do your requests using the Bearer Authorization and paste your token.
 
-##HTTP
+
+## HTTP
 
 ***Request***
 
@@ -140,7 +141,7 @@ Then, Do your requests using the Bearer Authorization and paste your token.
 2) Headers.
 3) Body.
 
-##Richardson Maturity Model
+## Richardson Maturity Model
 
 ***Level1: Resources***
 
@@ -155,9 +156,6 @@ example: GET /users/{id}
 The point of hypermedia controls is that they tell us what we can do next.
 
 ##
-
-
-
 
 
 **Any Questions ?**
