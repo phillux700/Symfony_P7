@@ -52,6 +52,12 @@ class ErrorsController extends AbstractController
             $data['hydra:description'] = "L'utilisateur $id n'existe pas";
             return $this->json($data, 404);
         }
+
+        /*if($user)
+        {
+            $data['@links'] = "/api/users";
+            return $this->json($data, 200);
+        }*/
         return $this->json($user);
     }
 

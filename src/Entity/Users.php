@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -37,12 +38,14 @@ use App\Entity\Client;
  *              "method"="GET",
  *              "path"="users/{id}",
  *              "groups"={"read"},
- *              "swagger_context"={"summary"="Permet de récupérer une ressources Users grâce à son id"}},
+ *              "swagger_context"={"summary"="Permet de récupérer une ressources Users grâce à son id"}
+ *     },
  *          "delete"={
  *              "method"="DELETE",
  *              "swagger_context"={"summary"="Permet de supprimer une ressource Users grâce à son id"}}
  *     },
  * )
+ *
  * @ORM\Entity(repositoryClass="App\Repository\UsersRepository")
  */
 class Users
@@ -59,13 +62,14 @@ class Users
      * @ORM\Column(type="string", length=100)
      * @Assert\NotBlank(message="Ce champ ne peut être vide")
      * @Groups({"read", "write"})
+     *
      */
     private $username;
 
     /**
      * @ORM\Column(type="string", length=100)
      * @Assert\Email(
-     *     message = "The email '{{ value }}' is not a valid email."
+     *     message = "The email '{{ value }}' n'est pas un email valide."
      * )
      * @Groups({"read", "write"})
      */
