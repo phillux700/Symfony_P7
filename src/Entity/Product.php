@@ -19,8 +19,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *          "get"={
  *              "method"="GET",
  *              "swagger_context"={"summary"="Permet de récupérer l'ensemble des ressources Product."}
- *              },
- *
+ *          }
  *     },
  *     itemOperations=
  *     {
