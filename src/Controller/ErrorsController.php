@@ -39,29 +39,6 @@ class ErrorsController extends AbstractController
     }
 
     /**
-     * @Route("/api/users/{id}", name="user")
-     */
-    public function userCheck($id, UsersRepository $usersRepository)
-    {
-        $user = $usersRepository->find($id);
-        if(!$user)
-        {
-            $data['@context'] = "/contexts/Error";
-            $data['@type'] = "Erreur";
-            $data['hydra:title'] = "Une erreur est survenue";
-            $data['hydra:description'] = "L'utilisateur $id n'existe pas";
-            return $this->json($data, 404);
-        }
-
-        /*if($user)
-        {
-            $data['@links'] = "/api/users";
-            return $this->json($data, 200);
-        }*/
-        return $this->json($user);
-    }
-
-    /**
      * @Route("/api/clients/{id}", name="client")
      */
     public function clientCheck($id, ClientRepository $clientRepository)
