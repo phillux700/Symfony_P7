@@ -48,6 +48,8 @@ database (`doctrine:database:drop --force`) and try again.
 php bin/console server:run
 ```
 
+![api2](https://raw.githubusercontent.com/sergisergio/SYMFONY_Projet7_Bilemo/master/api.png)
+
 ##
 **Generate the SSH keys with JWT**
 
@@ -89,15 +91,10 @@ Now check out the api at `http://localhost:8000/api`
 
 click on the green button "Authorize" :
 
-![api1](https://api-platform.com/static/JWTAuthorizeButton-702943047407dc8abd80a3e6c301d4f0-a72cf.png)
-
-
 Enter:
 ```
 Bearer %yourtoken%
 ```
-
-![api2](https://api-platform.com/static/JWTConfigureApiKey-2b1888051ed1e63d8d3520f369c15e95-a72cf.png)
 
 Now, you can see 6 operations:
 
